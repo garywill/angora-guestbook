@@ -1,0 +1,70 @@
+===============
+== CHANGELOG ==
+===============
+
+Angora Guestbook
+Version 1.2.1 -> 1.5
+
+
+CHANGES
+--------
+
+Add timezones
+Add support for reCaptcha
+Add possibility for visitors to upload images with tinypic service
+Add Yamli plugin for tinymce
+Add php compressor for tinymce
+Add check for zlib compression
+Fix eregi deprecated function, replace with preg_match
+Fix LFI vulnerability in index.php, medium criticality
+Fix session cookies so that admins will still be logged in even if they also sign the guestbook
+Fix a minor XHTML validation error (double quotes for stats link in footnotes)
+Change Opera icon to the latest one
+Convert os and browser icons to png
+Update timymce to version 3.3.7
+Update mobile class to check correctly for opera mobile
+Add Palm webOS to stats and mobile class
+
+
+MODIFIES FILES
+---------------
+
+index.php
+configuration.php
+
+admin/index.php
+admin/includes/content/options.php
+admin/includes/content/posts.php
+
+classes/functions.php
+classes/mobile/mobile.class.php
+classes/manage/statistics.class.php
+classes/manage/stats.class.php
+
+includes/captcha.php
+includes/content/sign.php
+
+languages/*/admin.php
+
+themes/*/content/sign.tpl
+themes/*/boxes/footNotes.tpl
+
+images/browser/*
+images/os/*
+
+javascript/tiny_mce/*
+
+
+ADDED FILES
+------------
+
+images/os/icon_palm_webos.png
+
+
+Changed database fields :
+-------------------------
+
+Add timezone (var 255) to config table
+Add reCaptcha (tinyint 1 = bool) to config table
+Add reCaptchapubk (var 255) to config table
+Add reCaptchaprvk (var 255) to config table

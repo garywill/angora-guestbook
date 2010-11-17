@@ -1,0 +1,38 @@
+Angora Guestbook
+Version 1.6, codename: Theia (http://en.wikipedia.org/wiki/Theia)
+
+
+Done
+----
+
+Fix email notification error
+Remove dependency for reCaptcha from built-in captcha option
+Fix ob_gzhandler warning message (thanks to fox333)
+Weaken the requirement for mysql version (will check but won't stop the installation if failed. This is a workaround where mysql version is not given as a number)
+Fix a regression introduced in version 1.5 where update script from version 0.7.x fails
+Replace eregi with preg_match in error class
+Update TinyMCE to version 3.3.9.2
+
+
+Todo
+----
+
+Remove yamli plugin from default and add it as an option
+Add blackberry os in stats and statistics
+
+
+Modified files
+--------------
+
+configuration.php
+
+classes/functions.php
+classes/email/email.class.php
+classes/error/error.class.php
+
+includes/content/sign.php
+
+javascript/tiny_mce/*
+
+setup/includes/content/check.php
+setup/includes/content/update.php
