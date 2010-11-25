@@ -20,6 +20,8 @@ Todo
 Remove yamli plugin from default and add it as an option
 Add blackberry os in stats and statistics
 
+Add converter tool from other guestbooks to Angora guestbook
+
 
 Modified files
 --------------
