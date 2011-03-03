@@ -7,7 +7,7 @@
  * Angora Guestbook                                 *
  ****************************************************
  * Software author :            Adel Noureddine     *
- * Copyright 2005 - 2009 by :   Adel Noureddine     *
+ * Copyright 2005 - 2011 by :   Adel Noureddine     *
  ****************************************************
  * The statistics class file                        *
  ****************************************************
@@ -78,6 +78,10 @@ class Statistics {
 			$os = (preg_match('/macos/i', $this->userAgent)) ? 'macos' : $os;
 			$os = (preg_match('/mac os/i', $this->userAgent)) ? 'macos' : $os;
 			$os = (preg_match('/webos/i', $this->userAgent)) ? 'palm_webos' : $os;
+			$os = (preg_match('/iphone/i', $this->userAgent)) ? 'ios' : $os;
+			$os = (preg_match('/ipod/i', $this->userAgent)) ? 'ios' : $os;
+			$os = (preg_match('/ipad/i', $this->userAgent)) ? 'ios' : $os;
+			$os = (preg_match('/blackberry/i', $this->userAgent)) ? 'blackberry' : $os;
 		}
 		
 		$this->os = $os;

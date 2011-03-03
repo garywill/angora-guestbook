@@ -124,7 +124,7 @@ $headIncludes .= "
 		remove_trailing_nbsp : true,
 		entity_encoding : \"raw\",
 		plugins : \"bbcode, emotions, inlinepopups, uploadImage, rbyamli\",
-		theme_advanced_buttons1 : \"bold,italic,underline,link,unlink,image,uploadImage,forecolor,emotions,rbyamli,undo\",
+		theme_advanced_buttons1 : \"bold,italic,underline,link,unlink,image,uploadImage,forecolor,emotions,undo\",
 		theme_advanced_buttons2 : \"\",
 		theme_advanced_buttons3 : \"\",
 		theme_advanced_path_location : \"top\",

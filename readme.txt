@@ -6,9 +6,9 @@
 Angora Guestbook
 Author : Adel Noureddine
 Website : http://aguestbook.sourceforge.net
-Version : 1.5
-Copyright (c) Adel Noureddine 2005 - 2010
-The Angora Guestbook logo is copyrighted to Adel Noureddine, 2009 - 2010
+Version : 1.6 (codename Theia - http://en.wikipedia.org/wiki/Theia)
+Copyright (c) Adel Noureddine 2005 - 2011
+The Angora Guestbook logo is copyrighted to Adel Noureddine, 2009 - 2011
 
 
 
@@ -54,7 +54,7 @@ For TinyMCE :
 tiny_mce/plugins/emotions/editor_plugin.js, editor_plugin_src.js and /js/emotions.js, are modified versions of the original files.
 Modification for editor_plugin_src.js is line 14, where emotions.htm is replaced with emotions.php
 emotions.php is a new file, in replacement of emotions.htm
-Version used : 3.3.7
+Version used : 3.3.9.3
 
 
 CREDITS
