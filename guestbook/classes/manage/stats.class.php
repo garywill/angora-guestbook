@@ -19,7 +19,7 @@ class Stats {
 	private $tableBrowser;
 
 	function __construct() {
-		$this->tableOS = array("Windows 9.x"=>"0", "Windows 7"=>"0", "Windows Vista"=>"0", "Windows XP"=>"0", "Linux"=>"0", "Mac OS"=>"0", "Unix"=>"0", "Solaris"=>"0", "Palm webOS"=>"0", "iOS"=>"0", "Blackberry"=>"0", "Others"=>"0");
+		$this->tableOS = array("Windows 9.x"=>"0", "Windows 7"=>"0", "Windows Vista"=>"0", "Windows XP"=>"0", "Linux"=>"0", "Mac OS"=>"0", "Unix"=>"0", "Solaris"=>"0", "Palm webOS"=>"0", "iOS"=>"0", "Blackberry"=>"0", "Android"=>"0", "Others"=>"0");
 		$this->tableBrowser = array("Internet Explorer"=>"0", "Firefox"=>"0", "Opera"=>"0", "Safari"=>"0", "Google Chrome"=>"0", "Mozilla/Netscape"=>"0", "Konqueror"=>"0", "Others"=>"0");
 	}
 	
@@ -88,6 +88,9 @@ class Stats {
 		}
 		elseif (eregi('blackberry', $userAgent)) {
 			$this->tableOS["Blackberry"]++;
+		}
+		elseif (eregi('android', $userAgent)) {
+			$this->tableOS["Android"]++;
 		}
 		else {
 			$this->tableOS["Others"]++;

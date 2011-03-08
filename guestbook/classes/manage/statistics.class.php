@@ -82,6 +82,7 @@ class Statistics {
 			$os = (preg_match('/ipod/i', $this->userAgent)) ? 'ios' : $os;
 			$os = (preg_match('/ipad/i', $this->userAgent)) ? 'ios' : $os;
 			$os = (preg_match('/blackberry/i', $this->userAgent)) ? 'blackberry' : $os;
+			$os = (preg_match('/android/i', $this->userAgent)) ? 'android' : $os;
 		}
 		
 		$this->os = $os;

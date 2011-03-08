@@ -27,6 +27,16 @@ NEW INSTALLATION
 4. Follow the instructions on the screen and choose "New installation" when asked
 
 
+UPDATE FROM ANGORA GUESTBOOK VERSION 1.5
+-----------------------------------------
+
+NOTE: Use the 1.5 to 1.6 update patch, not the full 1.6 package.
+
+1. Backup your files and database
+2. Upload all files from the angora/ folder to your server and replace the old ones
+3. You're done!
+
+
 UPDATE FROM ANGORA GUESTBOOK VERSIONS 1.0, 1.1, 1.2 AND 1.2.1
 -------------------------------------------------------------
 

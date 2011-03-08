@@ -13,7 +13,7 @@ Fix a regression introduced in version 1.5 where update script from version 0.7.
 Replace eregi with preg_match in error class
 Update TinyMCE to version 3.3.9.2
 Remove yamli plugin from default tinymce editor (but still manually available with adding rbyamli to tinymce init javascript code)
-Add iPad, iPhone and iPod as iOS, and add Blackberry in OS statistics
+Add iPad, iPhone and iPod as iOS, and add Blackberry and Android in OS statistics
 
 Todo
 ----
@@ -38,3 +38,10 @@ javascript/tiny_mce/*
 
 setup/includes/content/check.php
 setup/includes/content/update.php
+
+
+ADDED FILES
+------------
+
+images/os/icon_blackberry.png
+images/os/icon_ios.png
