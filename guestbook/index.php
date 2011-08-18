@@ -26,6 +26,9 @@ if ($config['debug']) {
 // Language settings
 $langName = secureVar($_GET['l'], 'html');
 
+if (preg_match('#/#',$langName))
+	$langName = $config['guestbookLang'];
+
 if (! empty($langName))
 	$_SESSION['langName'] = $langName;
 

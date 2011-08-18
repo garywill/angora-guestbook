@@ -3,6 +3,8 @@
 if (@$magic != "0xDEADBEEF")
 	die("This file cannot be executed directly");
 
+error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+
 require_once 'data.php';
 include_once 'classes/error/error.class.php';
 
@@ -94,7 +96,7 @@ foreach ($con->queryResult as $res) {
 }
 
 $config['angName'] = 'Angora';
-$config['angVersion'] = '1.6';
+$config['angVersion'] = '1.6.1';
 $config['angUrl'] = 'http://aguestbook.sourceforge.net';
 
 $con->close();

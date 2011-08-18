@@ -59,7 +59,7 @@ function passwordStrength(password)
 
 <?php
 
-$pageName = secureVar($_GET['a'], 'html');
+@$pageName = secureVar($_GET['a'], 'html');
 
 if (! empty($pageName)) {
 	switch ($pageName) {

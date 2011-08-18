@@ -20,7 +20,7 @@ class Error {
 
 	function __construct($errorText) {
 		$this->errorText = $errorText;
-		if (preg_match('/admin', $_SERVER['SCRIPT_FILENAME']))
+		if (preg_match('/admin/i', $_SERVER['SCRIPT_FILENAME']))
 			$this->errorStyle = "<link rel=\"stylesheet\" href=\"../includes/commonStyle.css\" type=\"text/css\" />";
 		else
 			$this->errorStyle = "<link rel=\"stylesheet\" href=\"includes/commonStyle.css\" type=\"text/css\" />";

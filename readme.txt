@@ -6,7 +6,7 @@
 Angora Guestbook
 Author : Adel Noureddine
 Website : http://aguestbook.sourceforge.net
-Version : 1.6 (codename Theia - http://en.wikipedia.org/wiki/Theia)
+Version : 1.6.1
 Copyright (c) Adel Noureddine 2005 - 2011
 The Angora Guestbook logo is copyrighted to Adel Noureddine, 2009 - 2011
 
@@ -26,11 +26,20 @@ NEW INSTALLATION
 3. Run the setup installer at /setup/
 4. Follow the instructions on the screen and choose "New installation" when asked
 
+UPDATE FROM ANGORA GUESTBOOK VERSION 1.6
+-----------------------------------------
+
+NOTE: Use the 1.6 to 1.6.1 update patch, not the full 1.6.1 package.
+
+1. Backup your files and database
+2. Upload all files from the angora/ folder to your server and replace the old ones
+3. You're done!
+
 
 UPDATE FROM ANGORA GUESTBOOK VERSION 1.5
 -----------------------------------------
 
-NOTE: Use the 1.5 to 1.6 update patch, not the full 1.6 package.
+NOTE: Use the 1.5 to 1.6.1 update patch, not the full 1.6.1 package.
 
 1. Backup your files and database
 2. Upload all files from the angora/ folder to your server and replace the old ones
@@ -40,7 +49,12 @@ NOTE: Use the 1.5 to 1.6 update patch, not the full 1.6 package.
 UPDATE FROM ANGORA GUESTBOOK VERSIONS 1.0, 1.1, 1.2 AND 1.2.1
 -------------------------------------------------------------
 
-Use the 1.x to 1.5 update patch and follow its instructions
+NOTE: Use the 1.x to 1.6.1 update patch, not the full 1.6.1 package.
+
+1. Backup your files and database
+1. Upload all files from the guest/ folder to your server and replace the old ones
+3. Run the setup installer at /setup/
+4. Follow the instructions on the screen and choose "Update from versions 1.x" when asked
 
 
 UPDATE FROM AN GUESTBOOK VERSION 0.7.x
@@ -64,7 +78,7 @@ For TinyMCE :
 tiny_mce/plugins/emotions/editor_plugin.js, editor_plugin_src.js and /js/emotions.js, are modified versions of the original files.
 Modification for editor_plugin_src.js is line 14, where emotions.htm is replaced with emotions.php
 emotions.php is a new file, in replacement of emotions.htm
-Version used : 3.3.9.3
+Version used : 3.4.2
 
 
 CREDITS

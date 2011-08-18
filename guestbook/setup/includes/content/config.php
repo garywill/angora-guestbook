@@ -61,6 +61,7 @@ if ($installCheck['hidden'] == 'Lupa') {
 		$instDone = true;
 		$sqlfile = "sql/angora_1_5_installation.sql";
 
+		$sql = '';
 		if (is_file($sqlfile)) {
 			$lines = @file($sqlfile);
 			if (is_array($lines)) {
@@ -77,7 +78,7 @@ if ($installCheck['hidden'] == 'Lupa') {
 					elseif(!preg_match("/;[\r\n]+/",$line))
 						continue;
 					
-					$sql = ereg_replace('#__', $installCheck['prefix'], $sql);
+					$sql = preg_replace('/#__/', $installCheck['prefix'], $sql);
 					@$con->modify($sql);
 					
 					if (mysql_error() != "")
